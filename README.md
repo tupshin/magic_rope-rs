@@ -11,8 +11,8 @@ Assertions of fact.
  * Table
      * Copy/Replica(?)/Functionality(oltp vs olap)
          * Additional hierarchy of locality, which could include NUMA domain, etc.
-         * Partition
-             * Row/Value (going to ignore the fact that Cassandra is anything other than a K/V store of rows temporarily, but cassandra partitions being strongly ordered extends this perfectly)
+             * Partition
+                 * Row/Value (going to ignore the fact that Cassandra is anything other than a K/V store of rows temporarily, but cassandra partitions being strongly ordered extends this perfectly)
 
 Total ordering within a row might exist for historical reasons, but is immaterial to the model as you will never subdivide a row.
 
