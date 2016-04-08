@@ -30,6 +30,6 @@ Segments have owning nodes/services (those two terms will be used interchangeabl
 Visualization Steps
 1. Construct a total ordering of all of the atoms in your data universe. In a distributed key value store, those atoms are individual copies of your k/v pairs. Making a distinction between the abstract notion of KV=K->V and a particular recording of a particular K/V pair
 2. Take that total ordering, and lay it out on a bounded or unbounded Rope.
-3. Back the rope by a persistent Finger Tree.
-4. Have each node have agency over its own load and be able to dynamically shed or acquire *portion* of ranges (since they are ordered, it's just sending the portion and moving a pointer internally.
+3. Back the rope by a distributed persistent Finger Tree.
+4. Have each node have agency over its own load and be able to dynamically shed or acquire *portion* of ranges (since they are ordered, it's just sending the portion and moving a pointer internally).
 
