@@ -1,3 +1,5 @@
+# A Magic Rope is a Better Dynamo
+
 (Note that "Rope" is used in this document to be synonymous with https://en.wikipedia.org/wiki/Rope_(data_structure) except that "String" is no more meaningful here than it is in SSTable (Static "string" table). A magic rope is a non-string-encoding rope with additional useful properties described below.
 
 #### A total ordering over what?
