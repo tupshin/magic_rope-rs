@@ -18,7 +18,7 @@ Total ordering within a row might exist for historical reasons, but is immateria
 
 Segments have owning nodes/services (those two terms will be used interchangeably here). Various mutual exclusion rules can be added to ensure that an owner doesn't have segments that would violate rack-awareness/etc.
 
-#### Minimum per-owner functionality to maintain a well balanced Rope?
+#### Minimum per-range-owner(equivalent to vnode) functionality to maintain a well balanced Rope?
 * pub fn balance_segments(&mut self, domain_rope:MagicRope<DSegment>) -> MagicRope<DSegment>;
 * fn oversized_segments(&self) -> Vec<DSegment>
 * fn undersized_segments(&self) -> Vec<DSegment>
